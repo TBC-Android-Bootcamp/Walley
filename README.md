@@ -18,4 +18,4 @@
      
 # დემო
 იხილეთ ქვემოთ<br>
-![](demo/Demo.gif)
+![](demo/newDemo.gif)
