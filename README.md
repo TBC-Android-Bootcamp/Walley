@@ -15,3 +15,7 @@
      <br>**(implementation 'com.google.firebase:firebase-analytics:17.4.2'**
      <br>**implementation 'com.google.firebase:firebase-auth-ktx:19.3.1')** -> Firebase - გამოყენებულია იუზერებთან(მომხმარებლებთან სამუშაოდ) შესვლისა და რეგისტრაციისთვის. უფრო მარტივად რომ ვთქვათ აუთენტიკაციისთვის. 
      
+     
+# დემო
+იხილეთ ქვემოთ<br>
+![](demo/Demo.gif)
