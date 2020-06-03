@@ -8,15 +8,28 @@ import com.example.meditate2.adapters.ViewPager
 
 class SplashScreen : AppCompatActivity() {
 
+    lateinit var auth: FirebaseAuth
     private val splashTimeOut: Long = 4000 // 4s
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            startActivity(Intent(this, ViewPager::class.java))
-            finish()
+            init()
 
         }, splashTimeOut)
+    }
+    
+    private fun init(){
+        auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser
+        if(currentUser != null) {
+            val intent = Intent(this, PhotosActivity::class.java)
+            startActivity(intent)
+            finish()
+        } else {
+            startActivity(Intent(this, ViewPager::class.java))
+            finish()
+        }
     }
 }
