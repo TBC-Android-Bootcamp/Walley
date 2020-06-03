@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.meditate2.adapters.ViewPager
+import com.example.meditate2.photoactivities.PhotosActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreen : AppCompatActivity() {
 
